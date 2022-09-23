@@ -1,15 +1,15 @@
 html, body {
-width: 100%;
-margin: 0px;
-color: black;
+    width: 100%;
+    margin: 0px;
+    color: black;
 }
 .dark-mode {
     background-color: black;
     color: white;
 }
 @font-face {
-  font-family: font;
-  src: url(font.ttf);
+    font-family: font;
+    src: url(font.ttf);
 }
 a {
     text-decoration: none;
@@ -49,6 +49,7 @@ a {
     height: 30px;
 }
 .greeting {
+    font-family: Sans-Serif;
     border-radius: 0 13px 13px 0;
     font-size: 2em;
     background-color: #3EA6FF;
@@ -70,7 +71,7 @@ a {
 .greeting > a > svg:hover {
     fill: black;
 }
-.greeting> a > svg{
+.greeting> a > svg {
     fill: white;
     display: inline;
     width: 20px;
@@ -80,13 +81,10 @@ a {
 }
 .greeting .readmore {
     font-size: 0.5em;
-    color: white;
-    padding: 2px;
+    color: black;
 }
 .greeting .readmore:hover {
-    background-color: white;
-    color: black;
-    border-radius: 2px;
+    color: white;
 }
 .kucing {
     width: 75px;
@@ -95,4 +93,40 @@ a {
 }
 .textimg {
     display: flex;
+}
+<--about-->
+.content {
+    width: 100%;
+}
+.content p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.content .title {
+    font-family: Sans-Serif;
+
+    font-size: 2em;
+    background-color: #3EA6FF;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+}
+.foto {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    text-align: center;
+    border: 0px solid white;
+    border-radius: 5px;
+}
+.foto1 {
+    cursor: wait;
+    padding-top: 2%;
+    padding-left: 42%;
+    padding-right: 42%;
+    width: 16%;
+    text-align: center;
+    border: 0px solid white;
+    border-radius: 5px;
 }
