@@ -16,7 +16,7 @@
 <body>
     <h3 class="icon">LukiZnr</h3>
     <div class="intro">
-        <div class="greeting">
+        <div class="greeting" id="1">
             <a href="https://github.com/lukiznr" target="_blank" rel="noopener noreferrer">
                 <svg class="github" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000">
                     <title>GitHub</title>
@@ -41,13 +41,11 @@
                 </div>
                 <img src="img/kucing.jpg" alt="Icon" class="kucing" />
             </div>
-            <a class="readmore" href="#content">
+            <div class="readmore">
                 Baca Selengkapnya
-            </a>
+            </div>
         </div>
-    </div>
-    <div class="content" id="content">
-        <div class="biodata">
+        <div class="biodata" id="2">
             <div class="title">
                 Tentang Saya
             </div>
@@ -69,5 +67,15 @@
             <a href="sertifikat">Sertifikat di Sololearn >>></a>
         </div>
     </div>
+    
+    <script>
+document.getElementById("1").onclick = function() {myFunction()};
+
+function myFunction() {
+  document.getElementById("2").style.opacity="1";
+  document.getElementById("1").style.opacity="0";
+}
+</script>
+
 </body>
 </html>
