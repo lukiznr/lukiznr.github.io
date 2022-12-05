@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Calculator</title>
+    <script>
+        function calculate(num1, num2, operator) {
+            var result;
+            if (operator === "+") {
+                result = num1 + num2;
+            } else if (operator === "-") {
+                result = num1 - num2;
+            } else if (operator === "*") {
+                result = num1 * num2;
+            } else if (operator === "/") {
+                result = num1 / num2;
+            } else {
+                result = "Invalid Operator";
+            }
+            return result;
+        }
+    </script>
+</head>
+<body>
+    <h2>JavaScript Calculator</h2>
+    <form>
+        <input type="number" name="num1" placeholder="Number 1">
+        <input type="number" name="num2" placeholder="Number 2">
+        <br>
+        <input type="submit" value="+" onclick="alert(calculate(num1.value, num2.value, '+'))">
+        <input type="submit" value="-" onclick="alert(calculate(num1.value, num2.value, '-'))">
+        <input type="submit" value="*" onclick="alert(calculate(num1.value, num2.value, '*'))">
+        <input type="submit" value="/" onclick="alert(calculate(num1.value, num2.value, '/'))">
+    </form>
+</body>
+</html>
